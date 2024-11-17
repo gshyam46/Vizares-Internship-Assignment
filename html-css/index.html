@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">Imaginary<span>Watch</span></div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <a href="#product"><i class="fas fa-tag"></i> Product</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>
+        Introducing the Timeless Elegance of <span>our Imaginary Watch</span>
+      </h2>
+      <p>
+        The epitome of craftsmanship and design. <br />Elevate your style today!
+      </p>
+      <a href="#product" class="cta-btn">Explore Now</a>
+    </section>
+
+    <!-- Main Product Section -->
+    <section class="product" id="product">
+      <h2>Our Luxurious Watch</h2>
+      <div class="product-display">
+        <div class="product-image">
+          <img src="images/rolex-main.png" alt="LuxWatch" />
+        </div>
+        <div class="thumbnails">
+          <img src="images/rolex-main.png" alt="Main 1" />
+
+          <img src="images/rolex-thumb1.png" alt="Side 1" />
+          <img src="images/rolex-thumb2.png" alt="Side 2" />
+          <img src="images/rolex-thumb3.png" alt="Side 3" />
+        </div>
+        <div class="product-details">
+          <h3>LuxWatch - Limited Edition</h3>
+          <div class="price">
+            <span>₹10,999</span>
+            <del>₹15,999</del>
+          </div>
+          <div class="quantity">
+            <button id="decrease">-</button>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button id="increase">+</button>
+          </div>
+          <button class="buy-btn" id="buyNow">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your message"
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Thank You!</h2>
+        <p>
+          Your order has been placed successfully. Our team will contact you
+          shortly!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
