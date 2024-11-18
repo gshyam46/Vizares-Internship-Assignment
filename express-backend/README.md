@@ -131,13 +131,3 @@ Here is some sample data you can use to test the API:
   }
 ]
 ```
-
----
-
----
-
-## Notes
-
-- Ensure you have **Node.js** and **npm** installed on your machine.
-- This API uses an in-memory array to store user data, so the data will be lost when the server restarts.
-- Feel free to reach out if you have any questions or need further assistance!
